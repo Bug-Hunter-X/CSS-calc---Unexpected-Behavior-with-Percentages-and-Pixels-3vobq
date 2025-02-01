@@ -1,0 +1,17 @@
+/* bug.css */
+#container {
+  /* Missing width causes calc() to malfunction */
+}
+
+#element {
+  width: calc(50% - 10px);
+}
+
+/* bugSolution.css */
+#container {
+  width: 500px; /* Explicit width for the container */
+}
+
+#element {
+  width: calc(50% - 10px);
+} 
